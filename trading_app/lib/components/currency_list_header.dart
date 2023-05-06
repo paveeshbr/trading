@@ -10,16 +10,15 @@ class CurrencyHeader extends StatelessWidget {
         'Title/ Change (1D)',
         style: TextStyle(fontWeight: FontWeight.w300),
       ),
-      trailing: SizedBox(
-        height: 100,
-        width: 100,
+      trailing: FittedBox(
+          fit: BoxFit.none,
         child: Row(
-          children: [
+          children: const [
             Text(
               "Sell",
               style: TextStyle(fontWeight: FontWeight.w300),
             ),
-            Spacer(),
+            SizedBox(width: 10,),
             Text(
               "Buy",
               style: TextStyle(fontWeight: FontWeight.w300),

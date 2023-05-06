@@ -22,9 +22,6 @@ class CurrencyListScreen extends StatelessWidget {
             floating: true,
             stretch: true,
             pinned: true,
-            flexibleSpace: FlexibleSpaceBar(
-              stretchModes: [StretchMode.blurBackground],
-            ),
             expandedHeight: 0,
           ),
           SliverList(
@@ -32,8 +29,9 @@ class CurrencyListScreen extends StatelessWidget {
               (context, index) => CurrencyTile(
                 currrency: currrencyData.currencies[index],
               ),
-              childCount: currrencyData.currencies.length,
-            ),
+            
+            childCount: currrencyData.currencies.length,
+            )
           ),
         ],
       ),
