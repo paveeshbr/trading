@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:trading_app/components/currency_list_header.dart';
 import 'package:trading_app/data/currency_data.dart';
 import '../components/currency_tile.dart';
+import '../sample.dart';
 
 class CurrencyListScreen extends StatelessWidget {
   CurrencyListScreen({super.key});
@@ -16,7 +17,7 @@ class CurrencyListScreen extends StatelessWidget {
           // Add the app bar to the CustomScrollView.
           const SliverAppBar(
             backgroundColor: Colors.white,
-            title: CurrencyHeader(),
+            title: Sample(),
             forceElevated: true,
             elevation: 5,
             floating: true,
